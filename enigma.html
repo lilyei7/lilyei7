@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>enigma.Grid — Jhayco</title>
+  <link rel="stylesheet" href="enigma.css">
+</head>
+<body>
+  <canvas id="view"></canvas>
+  <div class="seedwindow">
+    <textarea readonly>enigma.Grid</textarea>
+  </div>
+
+  <div class="main-content">
+    <header class="header">
+      <h1 class="title">enigma.Grid</h1>
+      <button class="toggle-btn">Toggle</button>
+    </header>
+    <div class="container">
+      <div class="controls">
+        <div class="input-group">
+          <label for="input">Original Message</label>
+          <span id="input">enigma.Grid</span>
+        </div>
+        <div class="input-group">
+          <label for="output">Encrypted Output</label>
+          <span id="output">—</span>
+        </div>
+        <p class="description">The pattern changes every few seconds, creating a unique key.</p>
+      </div>
+      <div class="holder" id="holder"></div>
+    </div>
+  </div>
+
+  <script src="enigma.js"></script>
+</body>
+</html>
