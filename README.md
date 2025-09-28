@@ -1,95 +1,60 @@
+<!-- Header -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lilyei7&show_icons=true&theme=radical" alt="stats"/>
+</p>
+
 # ¡Hola! Soy Lilyei 👋
 
-> "Hago de todo, bien y con actitud" — perfil perrón y único.
+> Hago que las ideas funcionen: desarrollo, automatizo y despliego.
 
-Soy desarrollador(a) full-stack, maker y solucionador(a) de problemas. Me encanta aprender rápido, tocar diferentes áreas (web, scripts, bots, automatizaciones, infra) y sacar proyectos reales que funcionan.
+<p align="center">
+  <!-- Badges -->
+  <img src="https://img.shields.io/badge/Status-Open%20for%20work-brightgreen">
+  <img src="https://img.shields.io/badge/Location-Donde%20esté-blue">
+  <img src="https://img.shields.io/badge/Contact-Open-orange">
+</p>
 
----
-
-## 🚀 ¿Qué ofrezco?
-- Desarrollo web full-stack (front + back).
-- Automatizaciones y bots (scripts, scraping, tareas repetitivas).
-- Infra y despliegue (Docker, CI/CD, nube básica).
-- Herramientas pequeñas que hacen la vida más fácil (CLI, utilidades).
-- Consultoría práctica: convertir ideas en MVPs rápidos.
-
-> Nota: "ofrezco de todo" se traduce aquí en que aprendo y me adapto rápido. Si quieres algo muy específico, dime techs y lo hacemos.
+Soy desarrollador(a) full-stack y maker: me muevo entre frontend, backend, scripts y despliegues rápidos. Me enfoco en crear MVPs útiles y soluciones que quedan en producción.
 
 ---
 
-## 🔧 Stack / Tecnologías (ejemplo)
-- Lenguajes: JavaScript/TypeScript, Python, Bash
-- Frontend: React, Vite, Tailwind CSS
-- Backend: Node.js, FastAPI / Flask
-- Infra: Docker, GitHub Actions, DigitalOcean / Vercel
-- Bases: PostgreSQL, SQLite
-
-(Cambia esta lista por las tecnologías con las que trabajes más)
+## � Tecnologías que uso (ejemplo)
+<p>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+</p>
 
 ---
 
 ## 💼 Proyectos destacados
-- [ProyectoA](https://github.com/lilyei7/ProyectoA) — Pequeño SaaS para X. (Añade una línea con lo que hace y stack)
-- [ProyectoB](https://github.com/lilyei7/ProyectoB) — Bot que automatiza Y.
-- [RepoDemo](https://github.com/lilyei7/RepoDemo) — Utilidad/CLI para Z.
+Aquí están 3 repos que muestro con una línea que explica qué hacen. Reemplaza los enlaces por tus repos reales o dime cuáles quieres que ponga.
 
-(Pinéalos en tu perfil y reemplaza los enlaces por tus repos reales.)
-
----
-
-## 🎯 ¿Cómo trabajo?
-1. Entiendo el objetivo y el mínimo viable.
-2. Entrego un prototipo funcional rápido.
-3. Iteramos y mejoramos según feedback.
-
-Me gusta entregar valor tangible desde la primera semana.
+- [ProyectoA](https://github.com/lilyei7/ProyectoA) — Pequeño SaaS que hace X. (React, Node.js)
+- [ProyectoB](https://github.com/lilyei7/ProyectoB) — Bot que automatiza Y. (Python)
+- [RepoDemo](https://github.com/lilyei7/RepoDemo) — CLI/utility para Z. (Node.js)
 
 ---
 
-## 📫 Contáctame
+## 📰 Lo último
+- Publicé un proyecto pequeño: *ProyectoA* — (añade 1 línea sobre qué hace y link)
+
+---
+
+## � Contacto
 - Email: (pon tu email aquí)
-- Twitter / X: [@tu_usuario](https://twitter.com/tu_usuario)
+- Twitter/X: [@tu_usuario](https://twitter.com/tu_usuario)
 - LinkedIn: /in/tu-perfil
-- Discord: tuUsuario#1234
 
 ---
 
-## ✨ Extras visuales (copia y pega donde corresponda)
-- GitHub readme stats (muestra tus stats):
-
-  ![Lilyei's GitHub stats](https://github-readme-stats.vercel.app/api?username=lilyei7&show_icons=true&theme=dracula)
-
-- Top langs:
-
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lilyei7&layout=compact&theme=dracula)
-
-- Badges rápidos (reemplaza con tus enlaces):
-
-  [![Twitter](https://img.shields.io/badge/Twitter-@tu_usuario-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/tu_usuario)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tu-perfil)
-
----
-
-## 🧾 Plantillas rápidas (frases/esloganes)
-- "Hago que las ideas funcionen. Full-stack, rápido y con estilo."
-- "Desarrollo, automatizo y despliego. Si hay un problema, lo arreglo."
-- "Polivalente: desde landing pages hasta bots que hacen café (virtual)."
-
-Elige uno o mezcla 2 para tener un opening fuerte.
-
----
-
-## 🤝 ¿Querés que lo deje listo?
-Puedo personalizar este README con:
-- Tu stack real y repos destacados.
-- Frases en el tono exacto que quieras (más profesional o más irreverente).
-- Badges con tus métricas reales.
-
-Si querés que lo deje ya listo, pasame:
-1. Tu lista real de tecnologías (máx 10).
-2. 3 repos que quieras destacar (links).
-3. Preferencia de tono: profesional / divertido / irreverente.
-
----
+## 📌 Métricas
+<p align="center">
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lilyei7&layout=compact&theme=radical)
+</p>
 
 © 2025 • Hecho con ⚡ por lilyei7
