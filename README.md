@@ -3,7 +3,7 @@
   <img src="https://github-readme-stats.vercel.app/api?username=lilyei7&show_icons=true&theme=radical" alt="stats"/>
 </p>
 
-# ¡Hola! Soy Lilyei 👋
+# ¡Hola! Soy Jhayco 👋
 
 > Hago que las ideas funcionen: desarrollo, automatizo y despliego.
 
@@ -57,4 +57,4 @@ Aquí están 3 repos que muestro con una línea que explica qué hacen. Reemplaz
   ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lilyei7&layout=compact&theme=radical)
 </p>
 
-© 2025 • Hecho con ⚡ por lilyei7
+© 2025 • Hecho con ⚡ por Jhayco
