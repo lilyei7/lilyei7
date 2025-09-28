@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhayco - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav dark">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="nav-logo">Jhayco</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="contact-mini">+52 123 456 7890</div>
+                <div class="hamburger" aria-label="menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hero-dark">
+        <div class="hero-split">
+            <div class="hero-left">
+                <div class="hero-inner">
+                    <h1 class="hero-name">Jhayco</h1>
+                    <h2 class="hero-role">Graphic & Web Designer</h2>
+                    <p class="hero-tagline">Construyo experiencias digitales y marcas con un enfoque visual potente.</p>
+                    <div class="hero-ctas">
+                        <a class="cta-outline" href="#resume">Resume</a>
+                        <a class="cta-solid" href="#portfolio">Portfolio</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" aria-label="behance">B</a>
+                        <a href="#" aria-label="dribbble">D</a>
+                        <a href="#" aria-label="instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image" role="img" aria-label="hero visual"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about dark-section">
+        <div class="about-split">
+            <div class="about-left">
+                <h2 class="about-title">About</h2>
+                <p class="about-lead">Diseñador y desarrollador con enfoque en producto digital. Me especializo en crear interfaces limpias, animadas y con intención de marca.</p>
+                <p class="about-body">Trabajo desde la estrategia hasta la implementación: identidad visual, UI/UX y desarrollo front-end. Me encanta que el producto no solo funcione, sino que se sienta memorable.</p>
+                <div class="about-meta">
+                    <div><strong>Location:</strong> Queretaro, Mexico</div>
+                    <div><strong>Email:</strong> tu-email@example.com</div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="profile-visual"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="resume" class="resume dark-section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-grid">
+                <div class="resume-col skills">
+                    <h4>Software Skills</h4>
+                    <div class="skill">
+                        <div class="skill-name">Photoshop</div>
+                        <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Illustrator</div>
+                        <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">React / Frontend</div>
+                        <div class="skill-bar"><div class="skill-fill" data-fill="88"></div></div>
+                    </div>
+                    <h4 style="margin-top:1.5rem">Languages</h4>
+                    <p>English - Advanced</p>
+                    <p>Spanish - Native</p>
+                </div>
+                <div class="resume-col timeline">
+                    <h4>Experience</h4>
+                    <div class="timeline-item"><span class="timeline-year">2023</span><div class="timeline-body"><strong>Senior Designer</strong><div class="timeline-desc">Company A — dirección de producto y diseño</div></div></div>
+                    <div class="timeline-item"><span class="timeline-year">2020</span><div class="timeline-body"><strong>Graphic Designer</strong><div class="timeline-desc">Company B — branding y campañas</div></div></div>
+                    <div class="timeline-item"><span class="timeline-year">2017</span><div class="timeline-body"><strong>Junior Designer</strong><div class="timeline-desc">Agency C — diseño editorial y web</div></div></div>
+                </div>
+                <div class="resume-col aside">
+                    <h4>What can I do?</h4>
+                    <ul>
+                        <li>Branding & Identity</li>
+                        <li>UI / UX Design</li>
+                        <li>Web & Frontend Development</li>
+                    </ul>
+                    <h4 style="margin-top:1rem">Hobbies & Interests</h4>
+                    <p>Photography · Music · Travel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="portfolio" class="portfolio dark-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <!-- projects placeholders -->
+                <div class="portfolio-item"><img src="https://via.placeholder.com/900x500/222/ddd?text=Project+1" alt="p1"/></div>
+                <div class="portfolio-item"><img src="https://via.placeholder.com/900x500/333/ddd?text=Project+2" alt="p2"/></div>
+                <div class="portfolio-item"><img src="https://via.placeholder.com/900x500/444/ddd?text=Project+3" alt="p3"/></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Hablemos</h2>
+            <div class="contact-content">
+                <div class="contact-text" data-aos="fade-right">
+                    <p class="contact-description">
+                        ¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea y 
+                        cómo podemos trabajar juntos para hacerla realidad.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tu-email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+52 123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>México</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jhayco. Hecho con ❤️ y mucho código.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
