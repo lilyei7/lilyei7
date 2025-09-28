@@ -73,8 +73,8 @@
   </tr>
 </table>
 
----
 
 _Esta versión imita la disposición de la imagen: avatar y métricas a la izquierda; calendario y gráficas a la derecha. Cuando me pases los repos reales, el bio exacto y el username final, actualizaré los widgets para mostrar tus datos verdaderos._
 
+© 2025 • Hecho con ⚡ por Jhayco
 © 2025 • Hecho con ⚡ por Jhayco
