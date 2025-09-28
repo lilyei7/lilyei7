@@ -44,15 +44,14 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
+
+    // Toggle a class instead of setting inline styles so CSS controls appearance.
     if (currentScroll > 100) {
-        nav.style.background = 'rgba(255, 255, 255, 0.98)';
-        nav.style.backdropFilter = 'blur(20px)';
+        nav.classList.add('scrolled');
     } else {
-        nav.style.background = 'rgba(255, 255, 255, 0.95)';
-        nav.style.backdropFilter = 'blur(10px)';
+        nav.classList.remove('scrolled');
     }
-    
+
     lastScroll = currentScroll;
 });
 
