@@ -291,6 +291,100 @@ document.querySelectorAll('.portfolio-item img').forEach(img => {
     img.style.transition = 'transform 0.4s ease';
 });
 
+/* ===== Futuristic blocks background + live code overlay ===== */
+(function(){
+    const canvas = document.getElementById('blocks-canvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas(){
+        canvas.width = canvas.clientWidth * devicePixelRatio;
+        canvas.height = canvas.clientHeight * devicePixelRatio;
+        ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    // generate floating blocks
+    const blocks = [];
+    function spawnBlock(){
+        const w = canvas.clientWidth;
+        const h = canvas.clientHeight;
+        blocks.push({
+            x: Math.random()*w,
+            y: h + 40 + Math.random()*200,
+            size: 8 + Math.random()*28,
+            speed: 0.4 + Math.random()*1.6,
+            hue: 180 + Math.random()*120,
+            alpha: 0.12 + Math.random()*0.6
+        });
+    }
+    for(let i=0;i<30;i++) spawnBlock();
+    setInterval(()=>{ if(blocks.length<80) spawnBlock(); }, 800);
+
+    function draw(){
+        const w = canvas.clientWidth;
+        const h = canvas.clientHeight;
+        ctx.clearRect(0,0,w,h);
+        // subtle grid glow
+        for(let i=0;i<blocks.length;i++){
+            const b = blocks[i];
+            b.y -= b.speed;
+            b.x += Math.sin((Date.now()+i*100)/2000)*0.3;
+            b.alpha *= 0.9996;
+            if(b.y < -60 || b.alpha < 0.02){ blocks.splice(i,1); i--; continue; }
+            const g = ctx.createLinearGradient(b.x, b.y, b.x+b.size, b.y+b.size);
+            g.addColorStop(0, `hsla(${b.hue},90%,60%,${b.alpha})`);
+            g.addColorStop(1, `hsla(${(b.hue+40)%360},90%,50%,${b.alpha*0.6})`);
+            ctx.fillStyle = g;
+            // draw glowing rect with blur overlay
+            ctx.shadowColor = `hsla(${b.hue},90%,60%,${b.alpha})`;
+            ctx.shadowBlur = 18;
+            ctx.fillRect(b.x, b.y, b.size, b.size);
+            ctx.shadowBlur = 0;
+        }
+        requestAnimationFrame(draw);
+    }
+    draw();
+
+    // Live code typing/stream
+    const live = document.getElementById('live-code');
+    if(!live) return;
+    const snippets = [
+        "const create = (x) => x.map(n => n*2);",
+        "fetch('/api/data').then(res => res.json()).then(render);",
+        "<header class='main'>\n  <h1>Design</h1>\n</header>",
+        "function animate(t){ requestAnimationFrame(animate) }",
+        "git commit -m 'feat: add futuristic hero'",
+        "console.log('live code stream')"
+    ];
+
+    let buffer = '';
+    function randomChar(){
+        const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>/{}[]()=+-_*%:;.,';
+        return chars.charAt(Math.floor(Math.random()*chars.length));
+    }
+
+    function stream(){
+        // occasionally replace a whole snippet
+        if(Math.random() < 0.02){ buffer = snippets[Math.floor(Math.random()*snippets.length)]; }
+        // append a few random chars to create 'live' feeling
+        const n = 2 + Math.floor(Math.random()*6);
+        for(let i=0;i<n;i++) buffer += randomChar();
+        // trim to reasonable length
+        if(buffer.length > 600) buffer = buffer.slice(buffer.length-600);
+        // insert line breaks for readability
+        const shown = buffer.replace(/(.{60})/g, '$1\n');
+        live.textContent = shown;
+        // ensure scrollbar stays at bottom
+        live.scrollTop = live.scrollHeight;
+        setTimeout(stream, 120 + Math.random()*240);
+    }
+    // start a bit after load
+    setTimeout(stream, 600);
+
+})();
+
 // Parallax effect for hero background
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
